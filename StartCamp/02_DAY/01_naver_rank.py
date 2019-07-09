@@ -19,3 +19,4 @@ ranks = soup.select(selector)
 
 for rank in ranks:
     print(rank.text)
+# 왜 텍스트 두 번?

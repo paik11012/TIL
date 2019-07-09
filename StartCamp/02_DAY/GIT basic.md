@@ -2,6 +2,26 @@
 
 기본명령어
 
+0. Git에 로그인
+
+git config --global user.email "minju11012@gmail.com"
+
+git config --global user.name "paik11012"
+
+GIT 초기화
+
+git bash 실행하고 계정 정보하기 삭제하기
+
+$git config --global --unset credential.helper
+
+$git system --global --unset credential.helper
+
+git config –global –unset-all user.name
+
+git config –global –unset-all user.email
+
+$ git config user.email
+
 1. Git 저장소 설정
 
 git init
@@ -41,6 +61,34 @@ git status
 ``` git log
 git log
 ```
+
+6. git 관리 취소하기
+
+```
+rm -f .git
+```
+
+상태 확인 git status, git remote -v
+
+cd .. 상위 폴더로 가기
+
+7. touch .gitignore 이용해 특정 텍스트 편집하기
+
+vi .gitignore로 빔 에디터 이용
+
+들어가서 esc-i누르면 편집 가능
+
+무시하고 싶은 파일 목록 적기 ex) **.txt
+
+그리고  esc누리고
+
+:w저장q나가기
+
+확인하기 vi .gitignore
+
+(add한 것 되돌리기 git reset)
+
+
 
 ## 원격저장소 활용하기
 
@@ -87,5 +135,3 @@ origin이라는 원격저장소의 master 브랜치로 지금까지의 커밋 �
 ref: https://backlog.com/git-tutorial/kr/
 
 
-
-모두 git add .

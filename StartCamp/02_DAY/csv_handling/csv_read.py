@@ -10,4 +10,4 @@ import csv
 with open('dinner.csv','r',encoding='utf-8') as f: #no empty lines
     items = csv.reader(f)
     for item in items:
-        print(items)
+        print(item)

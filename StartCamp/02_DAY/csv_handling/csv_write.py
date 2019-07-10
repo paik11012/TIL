@@ -23,5 +23,5 @@ with open('dinner.csv','w',encoding="utf-8", newline='') as f: #no empty lines
     #make new object to write csv in file f
     for item in dinner.items():
         csv_writer.writerow(item)
-
+        print(item)
 

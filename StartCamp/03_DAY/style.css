@@ -1,0 +1,14 @@
+   /* 요소 selector type */
+   h1 {color:blueviolet;}
+   h2 {color:coral;}
+   /* id selector */
+   #description {
+       background-color: blanchedalmond;
+   }
+   /* class selector */
+   li.list-item {
+    font-size: 20px;   
+   }
+   ul li {
+       background-color:crimson;
+   }

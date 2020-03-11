@@ -1,0 +1,19 @@
+## ERD디자인!
+
+![0309 (3)](C:\Users\paik\Desktop\새 폴더\0309\0309 (3).png)
+
+STUDENT_NO를 primary key로 설정하고 auto_increment했다.
+
+grade에 pjt성적을 넣어 모든 성적은 grade에서 관리되도록 했다.
+
+group내 group_id를 넣어 몇 번 그룹에 속하는지 표시되도록 했다.
+
+## 쿼리문
+
+```
+SELECT * FROM attendance WHERE `ATTENDANCE_1/1` IS NULL;
+SELECT STUDENT_CURRICULUM, COUNT(*) FROM user WHERE ALGORITHM_GRADE = 'A+' GROUP BY STUDENT_CURRICULUM;
+SELECT STUDENT_REGION, COUNT(*) FROM user WHERE ALGORITHM_GRADE = 'A+' GROUP BY STUDENT_REGION;
+SELECT GROUP_ID, COUNT(*) FROM user WHERE ALGORITHM_GRADE = 'A+' GROUP BY GROUP_ID;
+```
+

@@ -31,3 +31,11 @@ https://www.w3schools.com/sql/func_mysql_date_format.asp
 
 
 
+## NULL
+
+이름이 null이면 no name으로 채우기
+
+```
+SELECT ANIMAL_TYPE, IFNULL(NAME, "NO name") AS NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE NAME IS NULL ORDER BY ANIMAL_ID;
+```
+
